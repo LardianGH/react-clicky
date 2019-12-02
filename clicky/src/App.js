@@ -24,8 +24,9 @@ class App extends Component {
   clickCount = id => {
 
    
-    this.state.cards.find((o, i) => {
-      if (o.id === id) {
+    this.state.cards.find((idk, i) => { //idk is the selected JSON file
+      console.log(idk)
+      if (idk.id === id) {
         if(cards[i].selected === false){
           cards[i].selected = true;
           this.setState({correct : this.state.correct + 1}, function(){
